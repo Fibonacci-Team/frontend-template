@@ -1,0 +1,18 @@
+//
+// @group _settings/
+//
+
+// Очистка флоатов при помощи псевдо-элементов `::before` и `::after`
+// @link https://css-tricks.com/snippets/css/clear-fix/
+// @link https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use#answer-1633170
+// @link http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix () {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}

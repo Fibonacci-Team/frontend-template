@@ -1,0 +1,125 @@
+//
+// @group _settings/
+//
+
+// @param {String} $mod [""] - название брейкпоинта с разделителем
+// @access private
+@mixin _helpers-flex-generate($mod: '') {
+  ._#{$mod}flex {
+    display: flex;
+  }
+
+  ._#{$mod}items-start {
+    align-items: flex-start;
+  }
+
+  ._#{$mod}items-end {
+    align-items: flex-end;
+  }
+
+  ._#{$mod}items-center {
+    align-items: center;
+  }
+
+  ._#{$mod}items-stretch {
+    align-items: stretch;
+  }
+
+  ._#{$mod}justify-start {
+    justify-content: flex-start;
+  }
+
+  ._#{$mod}justify-end {
+    justify-content: flex-end;
+  }
+
+  ._#{$mod}justify-center {
+    justify-content: center;
+  }
+
+  ._#{$mod}justify-between {
+    justify-content: space-between;
+  }
+
+  ._#{$mod}justify-around {
+    justify-content: space-around;
+  }
+
+  ._#{$mod}self-start {
+    align-self: flex-start;
+  }
+
+  ._#{$mod}self-end {
+    align-self: flex-end;
+  }
+
+  ._#{$mod}self-center {
+    align-self: center;
+  }
+
+  ._#{$mod}self-stretch {
+    align-self: stretch;
+  }
+
+  ._#{$mod}flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  ._#{$mod}flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  ._#{$mod}flex-column {
+    flex-direction: column;
+  }
+
+  ._#{$mod}flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  ._#{$mod}flex-row {
+    flex-direction: row;
+  }
+
+  ._#{$mod}flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  ._#{$mod}flex-grow {
+    flex-grow: 1;
+  }
+
+  ._#{$mod}flex-nogrow {
+    flex-grow: 0;
+  }
+
+  ._#{$mod}flex-shrink {
+    flex-shrink: 1;
+  }
+
+  ._#{$mod}flex-noshrink {
+    flex-shrink: 0;
+  }
+
+  @for $i from 0 through 5 {
+    ._#{$mod}flex-order-#{$i} {
+      order: $i;
+    }
+  }
+}
+
+// Flex хелперы
+// @requires {mixin} media
+// @param {Map} $points [()] - карта брейкпоинтов, для которых нужно сделать хелперы
+@mixin helpers-flex($points: ()) {
+
+  // создаем базовый набор
+  @include _helpers-flex-generate();
+
+  // создаем набор для медиа запросов
+  @each $point, $size in $points {
+    @include media($size) {
+      @include _helpers-flex-generate($point + $sep);
+    }
+  }
+}

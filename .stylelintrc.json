@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "no-duplicate-selectors": true,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-named": "never",
+    "selector-combinator-space-after": "always",
+    "selector-attribute-quotes": "always",
+    "selector-attribute-operator-space-before": "never",
+    "selector-attribute-operator-space-after": "never",
+    "selector-attribute-brackets-space-inside": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-no-important": true,
+    "declaration-colon-space-before": "never",
+    "declaration-colon-space-after": "always",
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "number-leading-zero": "never",
+    "function-url-quotes": null,
+    "font-weight-notation": "numeric",
+    "font-family-name-quotes": "always-unless-keyword",
+    "comment-whitespace-inside": "always",
+    "comment-empty-line-before": null,
+    "at-rule-no-vendor-prefix": true,
+    "rule-empty-line-before": [
+      "always", {
+        "except": ["after-single-line-comment", "inside-block-and-after-rule", "first-nested"]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-pseudo-class-parentheses-space-inside": "never",
+    "selector-no-vendor-prefix": true,
+    "media-feature-range-operator-space-before": "always",
+    "media-feature-range-operator-space-after": "always",
+    "media-feature-parentheses-space-inside": "never",
+    "media-feature-colon-space-before": "never",
+    "media-feature-colon-space-after": "always",
+    "no-descending-specificity": null,
+    "block-opening-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "declaration-block-no-duplicate-properties": true,
+    "length-zero-no-unit": true,
+    "scss/at-rule-no-unknown": true
+  }
+}

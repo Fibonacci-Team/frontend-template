@@ -1,0 +1,18 @@
+{
+  "elements": [
+    "html5"
+  ],
+  "extends": [
+    "html-validate:recommended"
+  ],
+  "rules": {
+    "svg-focusable": 0,
+    "script-type": 0,
+    "wcag/h30": 0,
+    "no-inline-style": 1,
+    "no-raw-characters": 1,
+    "no-deprecated-attr": 1,
+    "prefer-native-element": 1,
+    "element-required-attributes": 1
+  }
+}

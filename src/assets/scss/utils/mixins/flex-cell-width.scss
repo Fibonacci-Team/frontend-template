@@ -1,0 +1,18 @@
+//
+// @group _settings/
+//
+
+// Размер флексовой ячейки
+// @param {Size} $width - разме ячейки
+@mixin flex-cell-width($width) {
+  flex-basis: $width;
+  width: $width;
+
+  @if ($width == auto) {
+    max-width: none;
+  }
+
+  @else {
+    max-width: $width;
+  }
+}

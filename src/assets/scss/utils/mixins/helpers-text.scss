@@ -1,0 +1,73 @@
+//
+// @group _settings/
+//
+
+// @param {String} $mod [""] - название брейкпоинта с разделителем
+// @access private
+@mixin _helpers-text-generate($mod: '') {
+  ._#{$mod}text-left {
+    text-align: left;
+  }
+
+  ._#{$mod}text-right {
+    text-align: right;
+  }
+
+  ._#{$mod}text-center {
+    text-align: center;
+  }
+
+  ._#{$mod}ellipsis {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  ._#{$mod}ellipsis-free {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// Хелперы управления текстом
+// @requires {mixin} media
+// @param {Map} $points [()] - карта брейкпоинтов, для которых нужно сделать хелперы
+@mixin helpers-text ($points: ()) {
+  @include _helpers-text-generate();
+
+  @each $point, $size in $points {
+    @include media($size) {
+      @include _helpers-text-generate($point + $sep);
+    }
+  }
+
+  ._text-100 {
+    font-weight: 100;
+  }
+  ._text-200 {
+    font-weight: 200;
+  }
+  ._text-300 {
+    font-weight: 300;
+  }
+  ._text-400 {
+    font-weight: 400;
+  }
+  ._text-500 {
+    font-weight: 500;
+  }
+  ._text-600 {
+    font-weight: 600;
+  }
+  ._text-700 {
+    font-weight: 700;
+  }
+  ._text-800 {
+    font-weight: 800;
+  }
+  ._text-900 {
+    font-weight: 900;
+  }
+}

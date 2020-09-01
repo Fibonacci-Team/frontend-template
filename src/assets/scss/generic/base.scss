@@ -1,0 +1,61 @@
+// Base
+a {
+  text-decoration: none;
+  transition: .3s ease-out color;
+
+  &,
+  &:focus,
+  &:active {
+    color: $primary;
+  }
+  &:hover {
+    color: $secondary;
+  }
+}
+
+#{headings()} {
+  line-height: 1.28;
+  font-weight: 500;
+  color: $gray-dark;
+}
+
+h1,
+.heading-1 {
+  @include responsive-font-size(32px, 54px, $screen-lg);
+
+  line-height: (62 / 54);
+}
+
+h2,
+.heading-2 {
+  @include responsive-font-size(28px, 40px, $screen-lg);
+
+  line-height: (57 / 40);
+}
+
+h3,
+.heading-3 {
+  @include responsive-font-size(24px, 36px, $screen-lg);
+
+  line-height: (46 / 36);
+}
+
+h4,
+.heading-4 {
+  @include responsive-font-size(22px, 28px, $screen-lg);
+
+  line-height: (36 / 28);
+}
+
+h5,
+.heading-5 {
+  @include responsive-font-size(18px, 24px, $screen-lg);
+
+  line-height: (34 / 24);
+}
+
+h6,
+.heading-6 {
+  font-size: rem(16);
+  line-height: (34 / 24);
+}

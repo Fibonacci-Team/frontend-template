@@ -1,0 +1,7 @@
+// Get interval in 'rem' by current size
+// @param {number} $space - интервал
+// @param {number} $fontsize - размер шрифта
+// @return {number}
+@function lspace ($space, $fontsize) {
+  @return ($space / 1000) * rem($fontsize);
+}

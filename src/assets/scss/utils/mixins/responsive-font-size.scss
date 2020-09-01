@@ -1,0 +1,11 @@
+@mixin responsive-font-size($start, $end, $media) {
+  font-size: $start;
+
+  @media (min-width: 320px) {
+    font-size: calc(#{$start} + #{strip-unit($end) - strip-unit($start)} * ( (100vw - 320px) / #{strip-unit($media) - 320} ));
+  }
+
+  @include media($media) {
+    font-size: em($end);
+  }
+}

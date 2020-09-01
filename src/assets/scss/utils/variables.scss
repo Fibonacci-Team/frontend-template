@@ -1,0 +1,62 @@
+// Variables
+
+// Dividers for BEM
+$sep: '-';
+
+// Count of grid column
+$grid-column-count: 12;
+
+// Fonts
+$font-family-main: 'Geometria', sans-serif !default;
+$font-family-code: consolas, 'Liberation Mono', menlo, courier, monospace !default;
+
+// Containers
+$container-default: 1200px !default;
+
+// Colors
+$white: #fff !default;
+$black: #000 !default;
+
+$primary:      #00b4cc !default;
+$primary-dark: #012233 !default;
+$secondary:    #f96706 !default;
+
+$gray-lighten: #fbfbfb !default;
+$gray-light:   #f6f6f6 !default;
+$gray-medium:  #9e9e9e !default;
+$gray:         #656565 !default;
+$gray-dark:    #121212 !default;
+
+// Colors states
+$error:   #eb5757 !default;
+$success: #6fcf97 !default;
+$warning: #f2994a !default;
+
+// Gutters
+$gutter-none: 0 !default;
+$gutter-10: rem(10) !default;
+$gutter-15: rem(15) !default;
+$gutter-20: rem(20) !default;
+$gutter-25: rem(25) !default;
+$gutter-30: rem(30) !default;
+$gutter-35: rem(35) !default;
+$gutter-40: rem(40) !default;
+$gutter-45: rem(45) !default;
+$gutter-50: rem(50) !default;
+$gutter-55: rem(55) !default;
+$gutter-60: rem(60) !default;
+
+// Screens
+$screen-xs: 320px !default;
+$screen-sm: 640px !default;
+$screen-md: 768px !default;
+$screen-lg: 1024px !default;
+$screen-xl: 1280px !default;
+
+$screen-orientation-auto: 'only screen and (orientation: auto)' !default;
+$screen-orientation-landscape: 'only screen and (orientation: landscape)' !default;
+$screen-orientation-portrait: 'only screen and (orientation: portrait)' !default;
+
+// Shadows
+$shadow-1: 0 rem(4) rem(30) rem(10) rgba(51, 51, 51, .05);
+$shadow-2: 0 rem(2) rem(20) rgba(51, 51, 51, .05);

@@ -1,0 +1,44 @@
+// Element-groups
+@mixin group($offset-x, $offset-y: $offset-x) {
+  margin-bottom: -$offset-y;
+  margin-left: -$offset-x;
+
+  &:empty {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  > * { // sass-lint:disable-line no-universal-selectors
+    margin-top: 0;
+    margin-bottom: $offset-y;
+    margin-left: $offset-x;
+  }
+}
+
+@mixin group-media($offset-x, $offset-y: $offset-x) {
+  &,
+  &:last-child {
+    margin-bottom: -$offset-y;
+    margin-left: -$offset-x;
+  }
+  > *,
+  > *:last-child { // sass-lint:disable-line no-universal-selectors
+    margin-bottom: $offset-y;
+    margin-left: $offset-x;
+  }
+}
+
+@mixin group-x($offset-x) {
+  margin-left: -$offset-x;
+
+  > * { // sass-lint:disable-line no-universal-selectors
+    margin-left: $offset-x;
+  }
+}
+
+@mixin group-y($offset-y) {
+  margin-bottom: -$offset-y;
+
+  > * { // sass-lint:disable-line no-universal-selectors
+    margin-bottom: $offset-y;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin link($color-start, $color-end) {
+  &,
+  &:focus,
+  &:active {
+    color: $color-start;
+  }
+  &:hover {
+    color: $color-end;
+  }
+}

@@ -1,0 +1,40 @@
+extends ../layouts/main
+
+block variables
+  - title = 'Auto Transport Leads';
+  - const pageClass = 'index-page';
+
+block content
+  .container
+    // Slider main container
+    .swiper-container
+      // Additional required wrapper
+      .swiper-wrapper
+        // Slides
+        .swiper-slide: img(src='assets/img/car.jpg' alt='')
+        .swiper-slide: img(src='assets/img/leads.jpg' alt='')
+        .swiper-slide: img(src='assets/img/car.jpg' alt='')
+      // If we need pagination
+      .swiper-pagination
+      // If we need navigation buttons
+      .swiper-button-prev
+      .swiper-button-next
+      // If we need scrollbar
+      .swiper-scrollbar
+
+  .container
+    .grid._lg-items-end.grid--vspace-15.grid--hspace-15
+      .gcell.gcell--lg-6
+        h1 Auto Transport Brokers Leads
+        h2 Auto Transport Brokers Leads
+        h3 Auto Transport Brokers Leads
+        h4 Auto Transport Brokers Leads
+        h5 Auto Transport Brokers Leads
+        h6 Auto Transport Brokers Leads
+        a(href='#') Default Link
+      .gcell.gcell--lg-6
+        #app
+          button(@click='counter++; component = !component' type='button') click me
+          p counter {{ counter }}
+            +svg('to-top', 20)
+          example-component(v-if='component')

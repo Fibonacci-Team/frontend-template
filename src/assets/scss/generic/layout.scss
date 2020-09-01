@@ -1,0 +1,21 @@
+html {
+  height: auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, // sass-lint:disable-line no-universal-selectors
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+::selection {
+  color: $white;
+  background: $primary;
+}
