@@ -7,10 +7,10 @@
 git clone https://github.com/vedees/webpack-template webpack-template
 
 # Go to the app:
-cd webpack-template
+cd frontend-template
 
 # Install dependencies:
-npm install
+npm i
 
 # Server with hot reload at http://localhost:8081/
 npm run dev
@@ -21,7 +21,7 @@ npm run build
 
 ## Project Structure:
 
-* `src/pug/pages/index.pug` - main app PUG
+* `src/pug/pages/*.pug` - main app PUG
 * `src/assets/scss` - put custom app SCSS styles here. Don't forget to import them in `index.js`
 * `src/assets/css` - the same as above but CSS here. Don't forget to import them in `index.js`
 * `src/assets/img` - put images here. Don't forget to use correct path: `assets/img/some.jpg`
@@ -174,8 +174,8 @@ const PAGES_DIR = PATHS.src
 All files must be created in the `./src/pug` folder.
 Example:
 ``` bash
-./src/pug/index.pug
-./src/pug/about.pug
+./src/pug/pages/index.pug
+./src/pug/pages/about.pug
 ```
 
 ## Create Another Pug Files:
@@ -193,9 +193,15 @@ Automatic creation sprite:
 
 #### Usage in Pug
 ``` bash
-  +svg('to-top', 20)
++svg('to-top', 20, 20, 'to-top')
 ```
 More about mixin look in `./src/pug/utils/mixins.pug` 
+#### Result in HTML
+``` html
+<svg width="20" height="20" class="to-top">
+    <use xlink:href="assets/svg/sprite.svg#to-top"></use>
+</svg>
+```
 
 ## Linters
 
