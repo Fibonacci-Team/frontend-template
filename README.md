@@ -182,7 +182,7 @@ Example:
 * `layouts/` - Page layout variants. Default - `default.pug`.
 * `elements/` - Universal, non-customizable markup, which can be used in multiple places. 
 * `components/` - Mixins: reusable and customizable markup. Usually these are: quotes, blog posts etc. Included only where used.
-  `components/utils.pug` - Universal, context-independent reusable mixins. Included on every page.
+<br/>`components/utils.pug` - Universal, context-independent reusable mixins. Included on every page.
 * `sections/` - Contains sections, that are used multiple times in project. Allows minor customization if necessary. If components are used in a section, they must be included in the section, not on the page.
 * `pages/` - Website pages.
 * `functions/` - Pug/JS functions. Due to poor js functions in pug files formatting, would be better to write each function in separate file and include it in main function file - `functions.pug`. 
