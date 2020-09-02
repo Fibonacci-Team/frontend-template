@@ -1,9 +1,9 @@
 export default class Loader {
-	constructor () {
-		this.body = document.body;
-	}
+  constructor () {
+    this.body = document.body;
+  }
 
-	init () {
-		this.body.classList.add('loaded');
-	}
+  init () {
+    this.body.classList.add('loaded');
+  }
 }

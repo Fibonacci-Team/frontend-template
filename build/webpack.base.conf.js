@@ -1,19 +1,19 @@
-const path = require('path')
-const fs = require('fs')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const fs = require('fs');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SvgSpritemapPlugin = require('svg-spritemap-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
   assets: 'assets/'
-}
+};
 
-const PAGE_DIR = `${PATHS.src}/pug/pages/`
-const PAGES = fs.readdirSync(PAGE_DIR).filter(filename => filename.endsWith('.pug'))
+const PAGE_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES = fs.readdirSync(PAGE_DIR).filter(filename => filename.endsWith('.pug'));
 
 module.exports = {
   // BASE config
@@ -37,7 +37,7 @@ module.exports = {
         vendor: {
           name: 'vendors',
           test: /node_modules/,
-          chunks: "all",
+          chunks: 'all',
           enforce: true
         }
       }
@@ -77,18 +77,18 @@ module.exports = {
           'style-loader',
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: { sourceMap: true }
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: true,
               config: { path: './postcss.config.js' }
             }
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: { sourceMap: true }
           }
         ]
@@ -99,11 +99,11 @@ module.exports = {
           'style-loader',
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: { sourceMap: true }
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
           }
         ]
@@ -137,7 +137,7 @@ module.exports = {
 
     new SvgSpritemapPlugin(`${PATHS.src}/${PATHS.assets}svg/*.svg`, {
       output: {
-        filename: './assets/svg/sprite.svg',
+        filename: './assets/svg/sprite.svg'
       },
       sprite: {
         prefix: false,
@@ -147,4 +147,4 @@ module.exports = {
       }
     })
   ]
-}
+};

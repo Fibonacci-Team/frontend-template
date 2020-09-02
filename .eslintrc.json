@@ -12,7 +12,7 @@
     "import/namespace": 0,
     "indent": [
       "error",
-      "tab",
+      2,
       {
         "SwitchCase": 1
       }

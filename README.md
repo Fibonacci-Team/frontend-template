@@ -260,7 +260,6 @@ console.log('bar');
 
 
 ## TODO template improvements
-- [ ] Check image optimization
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
 - [ ] Lazy load images/videos/iframe
@@ -278,7 +277,8 @@ console.log('bar');
 - [x] Make sass structure
 - [x] Optimize styles file size
 - [x] Adjust fluid typography
-- [x] Rename grid classes
+- [x] Check grid classes
+- [X] Make image optimization
 
 ## License
 [MIT](./LICENSE)
