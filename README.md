@@ -260,7 +260,6 @@ console.log('bar');
 
 
 ## TODO template improvements
-- [ ] Pug linter 
 - [ ] Check image optimization
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
@@ -273,6 +272,7 @@ console.log('bar');
 - [x] SASS linter
 - [x] Javascript linter 
 - [x] HTML linter
+- [x] Pug linter 
 - [x] Git hook for project testing
 - [x] Make pug structure
 - [x] Make sass structure

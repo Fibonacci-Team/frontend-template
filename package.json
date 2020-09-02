@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js",
-    "test": "npm run stylelint && npm run eslint && npm run \"html-validate\"",
+    "test": "npm run stylelint && npm run eslint && npm run html-validate && npm run pug-lint",
     "stylelint": "npx stylelint \"./src/assets/scss/**/*.scss\" --config .stylelintrc.json --config-basedir ./ --fix",
     "eslint": "eslint ./src/js/**/*.js --cache --cache-location ./.cache/.eslintcache --fix",
-    "html-validate": "html-validate ./dist/*.html"
+    "html-validate": "html-validate ./dist/*.html",
+    "pug-lint": "pug-lint --config .pug-lintrc.json src/pug/"
   },
   "husky": {
     "hooks": {
@@ -60,6 +61,7 @@
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
     "pug": "^3.0.0",
+    "pug-lint": "^2.6.0",
     "pug-loader": "^2.4.0",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^10.0.1",

@@ -4,5 +4,5 @@
   @param { string } height - svg height, if !isset = width
   @param { string } className - svg class
 mixin svg(name, width, height, className)
-  svg( width= width height= height ? height : width class= className )&attributes(attributes)
+  svg(width= width height= height ? height : width class= className)&attributes(attributes)
     use(xlink:href=`assets/svg/sprite.svg#${name}`)
