@@ -2,6 +2,8 @@ html {
   height: auto;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: $font-family-main;
+  color: $body-color;
 }
 
 body {
