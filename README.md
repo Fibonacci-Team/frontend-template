@@ -263,9 +263,8 @@ console.log('bar');
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
 - [ ] Lazy load images/videos/iframe
-- [ ] Add default favicon 
 - [ ] Webpack chunks loading
-- [ ] Check if fluid's typography calc is expensive
+- [ ] [Blade lint](https://packagist.org/packages/magentron/laravel-blade-lint) 
 
 **DONE:**
 - [x] SASS linter
@@ -279,6 +278,8 @@ console.log('bar');
 - [x] Adjust fluid typography
 - [x] Check grid classes
 - [X] Make image optimization
+- [x] Check if fluid's typography calc is expensive - it's fine
+- [x] Add default favicon 
 
 ## License
 [MIT](./LICENSE)
