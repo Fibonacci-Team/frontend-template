@@ -262,7 +262,6 @@ console.log('bar');
 ## TODO template improvements
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
-- [ ] Lazy load images/videos/iframe
 - [ ] Webpack chunks loading
 - [ ] [Blade lint](https://packagist.org/packages/magentron/laravel-blade-lint) 
 
@@ -280,6 +279,7 @@ console.log('bar');
 - [X] Make image optimization
 - [x] Check if fluid's typography calc is expensive - it's fine
 - [x] Add default favicon 
+- [x] Lazy load images/videos/iframe
 
 ## License
 [MIT](./LICENSE)

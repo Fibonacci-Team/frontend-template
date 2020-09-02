@@ -1,6 +1,7 @@
-import Swiper from 'swiper/js/swiper';
+import Swiper from 'swiper/js/swiper.min';
 
-const swiper = new Swiper('.swiper-container', {
+// eslint-disable-next-line no-new
+new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -18,5 +19,3 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false
   }
 });
-
-swiper.slideNext();

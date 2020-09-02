@@ -82,6 +82,7 @@
   },
   "dependencies": {
     "swiper": "^5.2.1",
+    "vanilla-lazyload": "^17.1.2",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
     "vuex": "^3.5.1"

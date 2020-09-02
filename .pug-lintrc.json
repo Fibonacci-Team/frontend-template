@@ -16,7 +16,6 @@
   "requireClassLiteralsBeforeIdLiterals": null,
   "disallowClassLiterals": null,
   "disallowClassAttributeWithStaticValue": true,
-  "disallowClassLiteralsBeforeAttributes": true,
   "requireClassLiteralsBeforeAttributes": null,
   "disallowSpaceAfterCodeOperator": null,
   "requireSpaceAfterCodeOperator": true,
