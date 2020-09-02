@@ -33,7 +33,7 @@
     "at-rule-no-vendor-prefix": true,
     "rule-empty-line-before": [
       "always", {
-        "except": ["after-single-line-comment", "inside-block-and-after-rule", "first-nested"]
+        "except": ["after-single-line-comment", "first-nested"]
       }
     ],
     "selector-pseudo-element-colon-notation": "double",
