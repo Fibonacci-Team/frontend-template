@@ -260,16 +260,14 @@ console.log('bar');
 
 
 ## TODO template improvements
-- [ ] Make sass structure
-- [ ] Optimize styles file size
-- [ ] Adjust fluid typography
-- [ ] Rename grid classes
+- [ ] Pug linter 
 - [ ] Check image optimization
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
 - [ ] Lazy load images/videos/iframe
 - [ ] Add default favicon 
 - [ ] Webpack chunks loading
+- [ ] Check if fluid's typography calc is expensive
 
 **DONE:**
 - [x] SASS linter
@@ -277,6 +275,10 @@ console.log('bar');
 - [x] HTML linter
 - [x] Git hook for project testing
 - [x] Make pug structure
+- [x] Make sass structure
+- [x] Optimize styles file size
+- [x] Adjust fluid typography
+- [x] Rename grid classes
 
 ## License
 [MIT](./LICENSE)

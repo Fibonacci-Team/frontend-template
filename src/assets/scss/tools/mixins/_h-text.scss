@@ -1,0 +1,15 @@
+// @param {String} $mod [""] - breakpoint's name with separator
+// @access private
+@mixin _helpers-text-generate($mod: '') {
+  ._#{$mod}text-left {
+    text-align: left;
+  }
+
+  ._#{$mod}text-right {
+    text-align: right;
+  }
+
+  ._#{$mod}text-center {
+    text-align: center;
+  }
+}

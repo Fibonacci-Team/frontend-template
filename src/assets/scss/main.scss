@@ -1,13 +1,28 @@
-// Main Styles
+@charset "utf-8";
 
-// Utils
-
-@import 'utils/index';
+// Tools
+@import 'tools/variables';
+@import 'tools/index';
 
 // Generic
-@import 'generic/container';
+@import '~modern-css-reset/dist/reset.min.css';
 @import 'generic/layout';
-@import 'generic/base';
+@import 'generic/layout-inner';
+@import 'generic/container';
+@import 'generic/typography';
+
+// Elements
+@import 'elements/logo';
+
+// Components
+@import 'components/post';
+
+// Content
+@import 'content/sections';
 
 // Modules
-@import 'modules/swiper';
+@import 'modules/index';
+
+// Utilities
+@import 'utilities/backgrounds';
+@import 'utilities/helpers';

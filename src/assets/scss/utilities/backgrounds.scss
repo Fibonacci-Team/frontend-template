@@ -1,0 +1,18 @@
+._context-dark {
+  @extend %context-dark;
+}
+
+// Light Backgrounds
+
+// Dark Backgrounds
+
+// Accent Backgrounds
+._bg-primary {
+  @extend %context-dark;
+}
+
+// Background Image
+._bg-image {
+  background-size: cover;
+  background-position: center;
+}

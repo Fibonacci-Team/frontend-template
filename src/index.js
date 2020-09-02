@@ -1,6 +1,6 @@
 import '~/assets/css/main.css'
 import '~/assets/scss/main.scss'
-import '~/assets/scss/vendors-and-helpers.scss'
+import '~/assets/scss/utils.scss'
 
 import '~/js'
 

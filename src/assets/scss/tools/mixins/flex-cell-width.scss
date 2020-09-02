@@ -1,9 +1,5 @@
-//
-// @group _settings/
-//
-
-// Размер флексовой ячейки
-// @param {Size} $width - разме ячейки
+// Flex grid cell sizing
+// @param {Size} $width - percentage
 @mixin flex-cell-width($width) {
   flex-basis: $width;
   width: $width;

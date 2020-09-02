@@ -1,0 +1,71 @@
+//
+// Variables
+//
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$primary:      #00b4cc;
+$secondary:    #f96706;
+
+$gray-lighten: #fbfbfb;
+$gray-light:   #f6f6f6;
+$gray-medium:  #9e9e9e;
+$gray:         #656565;
+$gray-dark:    #121212;
+
+// Colors states
+$error:   #eb5757;
+$success: #6fcf97;
+$warning: #f2994a;
+
+// Color usages
+$body-color:     $gray;
+$headings-color: $gray-dark;
+
+// Fonts
+$font-family-main: 'Open Sans', sans-serif;
+$font-family-code: consolas, 'Liberation Mono', menlo, courier, monospace;
+
+// Gutters
+$gutter-none: 0;
+$gutter-10: rem(10);
+$gutter-15: rem(15);
+$gutter-20: rem(20);
+$gutter-25: rem(25);
+$gutter-30: rem(30);
+$gutter-35: rem(35);
+$gutter-40: rem(40);
+$gutter-45: rem(45);
+$gutter-50: rem(50);
+$gutter-55: rem(55);
+$gutter-60: rem(60);
+
+// Grid
+$grid-column-count: 12;
+$grid-gutter: 15px;
+$container-default: 1200px;
+
+// Dividers for BEM
+$sep: '-';
+
+// Breakpoints
+$screen-xs: 320px;
+$screen-pfs: 512px;
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+
+$screen-orientation-auto: 'only screen and (orientation: auto)';
+$screen-orientation-landscape: 'only screen and (orientation: landscape)';
+$screen-orientation-portrait: 'only screen and (orientation: portrait)';
+
+// Fluid typography
+$fluid-typography-start: 320px;
+$fluid-typography-end: $screen-lg;
+
+// Shadows
+$shadow-1: 0 rem(4) rem(30) rem(10) rgba(51, 51, 51, .05);
+$shadow-2: 0 rem(2) rem(20) rgba(51, 51, 51, .05);

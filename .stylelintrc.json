@@ -7,7 +7,13 @@
     "stylelint-scss"
   ],
   "rules": {
-    "indentation": 2,
+    "indentation": [
+      2, {
+        "ignore": ["inside-parens"]
+      }
+    ],
+    "no-empty-source": null,
+    "block-no-empty": null,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
     "color-hex-case": "lower",
@@ -31,6 +37,9 @@
     "comment-whitespace-inside": "always",
     "comment-empty-line-before": null,
     "at-rule-no-vendor-prefix": true,
+    "declaration-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "no-missing-end-of-source-newline": null,
     "rule-empty-line-before": [
       "always", {
         "except": ["after-single-line-comment", "first-nested"]
@@ -46,7 +55,11 @@
     "media-feature-colon-space-after": "always",
     "no-descending-specificity": null,
     "block-opening-brace-newline-after": "always",
-    "block-closing-brace-newline-before": "always",
+    "block-closing-brace-newline-before": [
+      "always", {
+        "ignoreAtRules": ["if", "else"]
+      }
+    ],
     "declaration-block-no-duplicate-properties": true,
     "length-zero-no-unit": true,
     "scss/at-rule-no-unknown": true

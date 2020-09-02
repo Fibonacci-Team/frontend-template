@@ -1,0 +1,27 @@
+// Media queries
+// @param {Number|Keyword|String} $value - value of breakpoint
+// @param {Keyword} $direction [min] - media query direction
+// @param {Keyword} $dimension [width] - dimension (width or height) of media query
+@mixin media($value, $direction: min, $dimension: width, $corrector: 0) {
+  @if $direction == max {
+    $corrector: $corrector - 1;
+  }
+
+  @if type-of($value) == number {
+    $dir: #{$direction}-width;
+
+    @if $dimension == height {
+      $dir: #{$direction}-height;
+    }
+
+    @media only screen and ($dir: $value + $corrector) {
+      @content;
+    }
+  }
+
+  @else {
+    @media #{$value} {
+      @content;
+    }
+  }
+}

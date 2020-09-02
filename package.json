@@ -17,8 +17,10 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 3 version"
+    ">1%",
+    "not ie > 0",
+    "not op_mini > 0",
+    "not dead"
   ],
   "keywords": [
     "webpack",
@@ -53,6 +55,7 @@
     "html-webpack-plugin": "^4.4.0",
     "husky": "^4.2.5",
     "mini-css-extract-plugin": "^0.11.0",
+    "modern-css-reset": "^1.1.1",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",

@@ -1,0 +1,9 @@
+.layout-inner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  background-color: $white;
+}

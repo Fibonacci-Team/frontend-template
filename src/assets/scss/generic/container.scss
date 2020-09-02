@@ -1,17 +1,11 @@
 .container {
-  padding-left: $gutter-15;
-  padding-right: $gutter-15;
-  max-width: calc(#{$container-default} + #{$gutter-15} * 2);
-  margin: 0 auto;
+  padding-left: rem($grid-gutter);
+  padding-right: rem($grid-gutter);
+  max-width: rem($container-default + $grid-gutter * 2);
+  margin-left: auto;
+  margin-right: auto;
 
   & & {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  &--full {
-    max-width: 100%;
-  }
-  &--no-gap {
     padding-left: 0;
     padding-right: 0;
   }

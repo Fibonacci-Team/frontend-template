@@ -1,9 +1,4 @@
-//
-// @group _settings/
-//
-
-// @param {String} $mod [""] - название брейкпоинта с разделителем
-// @access private
+// @param {String} $mod [""] - breakpoint's name with separator
 @mixin _helpers-flex-generate($mod: '') {
   ._#{$mod}flex {
     display: flex;
@@ -108,15 +103,12 @@
   }
 }
 
-// Flex хелперы
+// Flex helpers
 // @requires {mixin} media
-// @param {Map} $points [()] - карта брейкпоинтов, для которых нужно сделать хелперы
+// @param {Map} $points [()] - map of breakpoints to make helpers to
 @mixin helpers-flex($points: ()) {
-
-  // создаем базовый набор
   @include _helpers-flex-generate();
 
-  // создаем набор для медиа запросов
   @each $point, $size in $points {
     @include media($size) {
       @include _helpers-flex-generate($point + $sep);

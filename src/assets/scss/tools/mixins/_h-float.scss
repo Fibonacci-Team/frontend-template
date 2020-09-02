@@ -1,8 +1,4 @@
-//
-// @group _settings/
-//
-
-// @param {String} $mod [""] - название брейкпоинта с разделителем
+// @param {String} $mod [""] - breakpoint's name with separator
 // @access private
 @mixin _helpers-float-generate($mod: '') {
   ._#{$mod}clearfix {
@@ -11,10 +7,6 @@
 
   ._#{$mod}clear {
     clear: both;
-  }
-
-  ._#{$mod}ovh {
-    overflow: hidden;
   }
 
   ._#{$mod}fll {
@@ -26,10 +18,10 @@
   }
 }
 
-// Хедперы флоатов
+// Float helpers
 // @requires {mixin} media
 // @requires {mixin} clearfix
-// @param {Map} $points [()] - карта брейкпоинтов, для которых нужно сделать хелперы
+// @param {Map} $points [()] - map of breakpoints to make helpers to
 @mixin helpers-float ($points: ()) {
   @include _helpers-float-generate();
 
