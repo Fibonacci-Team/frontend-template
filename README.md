@@ -4,7 +4,7 @@
 
 ``` bash
 # Download repository:
-git clone https://github.com/vedees/webpack-template webpack-template
+git clone https://github.com/Fibonacci-Team/frontend-template frontend-template
 
 # Go to the app:
 cd frontend-template
@@ -12,7 +12,7 @@ cd frontend-template
 # Install dependencies:
 npm i
 
-# Server with hot reload at http://localhost:8081/
+# Server with hot reload at http://localhost:8082/
 npm run dev
 
 # Output will be at dist/ folder
@@ -163,7 +163,7 @@ import example from '~/components/Example.vue'
 ```
 
 ## PUG Dir Folder
-#### Deafult
+#### Default
 * .pug dir: `./src/pug`
 * Configurations: in `./build/webpack.base.conf.js`
 ``` js
@@ -177,6 +177,15 @@ Example:
 ./src/pug/pages/index.pug
 ./src/pug/pages/about.pug
 ```
+
+**Pug files structure**
+* `layouts/` - Page layout variants. Default - `default.pug`.
+* `elements/` - Universal, non-customizable markup, which can be used in multiple places. 
+* `components/` - Mixins: reusable and customizable markup. Usually these are: quotes, blog posts etc. Included only where used.
+  `components/utils.pug` - Universal, context-independent reusable mixins. Included on every page.
+* `sections/` - Contains sections, that are used multiple times in project. Allows minor customization if necessary. If components are used in a section, they must be included in the section, not on the page.
+* `pages/` - Website pages.
+* `functions/` - Pug/JS functions. Due to poor js functions in pug files formatting, would be better to write each function in separate file and include it in main function file - `functions.pug`. 
 
 ## Create Another Pug Files:
 #### Default: 
@@ -251,7 +260,6 @@ console.log('bar');
 
 
 ## TODO template improvements
-- [ ] Make pug structure
 - [ ] Make sass structure
 - [ ] Optimize styles file size
 - [ ] Adjust fluid typography
@@ -268,6 +276,7 @@ console.log('bar');
 - [x] Javascript linter 
 - [x] HTML linter
 - [x] Git hook for project testing
+- [x] Make pug structure
 
 ## License
 [MIT](./LICENSE)
