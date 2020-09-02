@@ -250,17 +250,26 @@ console.log('bar');
 ```
 
 
-## TODO по улучшению заготовки
-- [x] Линтер SASS
-- [x] Линтер Javascript
-- [x] Валидация разметки
-- [x] Хуки на тестирование проекта
+## TODO template improvements
+- [ ] Make pug structure
+- [ ] Make sass structure
+- [ ] Optimize styles file size
+- [ ] Adjust fluid typography
+- [ ] Rename grid classes
+- [ ] Check image optimization
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
 - [ ] Lazy load images/videos/iframe
+- [ ] Add default favicon 
 - [ ] Webpack chunks loading
+
+**DONE:**
+- [x] SASS linter
+- [x] Javascript linter 
+- [x] HTML linter
+- [x] Git hook for project testing
 
 ## License
 [MIT](./LICENSE)
 
-Copyright (c) 2020-present, [Andrii Helever](https://github.com/gelbman20), [Kate Minakova](https://github.com/Retoyfer)
+Copyright (c) 2020-present, [Andrii Helever](https://github.com/gelbman20), [Kateryna Minakova](https://github.com/Retoyfer)

@@ -28,6 +28,9 @@
     "svg"
   ],
   "author": "Andrii Helever <gelbman20@gmail.com>",
+  "contributors": [
+    "Kateryna Minakova <retoyfer@gmail.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.4",
