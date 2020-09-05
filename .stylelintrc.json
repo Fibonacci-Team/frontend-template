@@ -6,6 +6,9 @@
   "plugins": [
     "stylelint-scss"
   ],
+  "ignoreFiles": [
+    "src/assets/scss/vendors/**/*.scss"
+  ],
   "rules": {
     "indentation": [
       2, {

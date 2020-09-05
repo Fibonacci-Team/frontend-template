@@ -5,7 +5,7 @@
 @import 'tools/index';
 
 // Generic
-@import '~modern-css-reset/dist/reset.min.css';
+@import 'vendors/reset';
 @import 'generic/layout';
 @import 'generic/layout-inner';
 @import 'generic/container';

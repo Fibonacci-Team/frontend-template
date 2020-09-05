@@ -7,7 +7,16 @@
   ],
   "rules": {
     "no-tabs": 0,
-    "no-console": "error",
+    "no-new": 0,
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
     "import/no-unresolved": 0,
     "import/namespace": 0,
     "indent": [

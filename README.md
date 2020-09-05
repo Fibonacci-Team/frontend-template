@@ -260,6 +260,7 @@ console.log('bar');
 
 
 ## TODO template improvements
+- [ ] Update js modules system 
 - [ ] Stylelint: BEM
 - [ ] Stylelint: styles order
 - [ ] Webpack chunks loading

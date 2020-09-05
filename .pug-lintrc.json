@@ -4,7 +4,6 @@
   "disallowTrailingSpaces": true,
   "maximumLineLength": null,
   "maximumNumberOfLines": null,
-  "disallowMultipleLineBreaks": true,
   "disallowAttributeConcatenation": true,
   "disallowAttributeInterpolation": null,
   "disallowAttributeTemplateString": null,

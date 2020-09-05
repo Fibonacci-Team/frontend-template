@@ -1,6 +1,5 @@
 import Swiper from 'swiper/js/swiper.min';
 
-// eslint-disable-next-line no-new
 new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
