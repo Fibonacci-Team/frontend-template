@@ -1,0 +1,19 @@
+._spacer-40 {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+}
+
+._spacer-lg {
+  padding-top: rem(65);
+  padding-bottom: rem(65);
+
+  @include media($screen-md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+
+  @include media($screen-xl) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
