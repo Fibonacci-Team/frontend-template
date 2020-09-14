@@ -9,6 +9,7 @@
     "svg-focusable": 0,
     "script-type": 0,
     "wcag/h30": 0,
+    "wcag/h32": 1,
     "no-inline-style": 1,
     "no-raw-characters": 1,
     "no-deprecated-attr": 1,
