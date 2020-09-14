@@ -8,7 +8,6 @@
 
 // Mixins
 @import 'tools/mixins/h-grid';
-@import 'tools/mixins/h-gutter';
 @import 'tools/mixins/h-flex';
 @import 'tools/mixins/h-show-hide';
 @import 'tools/mixins/h-float';
@@ -39,7 +38,6 @@ $_gutters-map: (
 );
 
 @include helpers-grid($grid-column-count, $_screen-map, $_gutters-map);
-@include helpers-gutter($_screen-map, $_gutters-map);
 //@include helpers-flex($_screen-map);
 //@include helpers-show-hide($_screen-map);
 //@include helpers-float($_screen-map);
