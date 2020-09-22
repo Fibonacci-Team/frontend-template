@@ -1,5 +1,4 @@
-@mixin fluid-typography($start, $end, $media-stop: $fluid-typography-end) {
-  $media-start: $fluid-typography-start;
+@mixin fluid-typography($start, $end, $media-start: $fluid-typography-start, $media-stop: $fluid-typography-end) {
   font-size: rem($start);
 
   @media (min-width: $media-start) {
