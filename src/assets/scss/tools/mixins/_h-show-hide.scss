@@ -2,46 +2,46 @@
 // @requires {mixin} media
 // @param {Map} $points [()] - карта брейкпоинтов, для которых нужно сделать хелперы
 @mixin helpers-show-hide($points: ()) {
-  /* stylelint-disable declaration-no-important */
-  ._hide {
-    display: none !important;
-  }
-
-  // TODO: use after implementing 'touchevents' functionality
-  //._hide-touch {
-  //  .touchevents & {
-  //    display: none !important;
-  //  }
-  //}
-  //._hide-notouch {
-  //  .no-touchevents & {
-  //    display: none !important;
-  //  }
-  //}
-  ._initial {
-    display: initial;
-  }
-
-  @media print {
-    ._noprint {
-      display: none !important;
-    }
-  }
-
-  @each $point, $size in $points {
-    $mod: $point + $sep;
-
-    @include media($size) {
-      ._#{$mod}hide {
+    /* stylelint-disable declaration-no-important */
+    ._hide {
         display: none !important;
-      }
     }
 
-    @include media($size, max) {
-      ._#{$mod}show {
-        display: none !important;
-      }
+    // TODO: use after implementing 'touchevents' functionality
+    //._hide-touch {
+    //  .touchevents & {
+    //    display: none !important;
+    //  }
+    //}
+    //._hide-notouch {
+    //  .no-touchevents & {
+    //    display: none !important;
+    //  }
+    //}
+    ._initial {
+        display: initial;
     }
-  }
-  /* stylelint-enable */
+
+    @media print {
+        ._noprint {
+            display: none !important;
+        }
+    }
+
+    @each $point, $size in $points {
+        $mod: $point + $sep;
+
+        @include media($size) {
+            ._#{$mod}hide {
+                display: none !important;
+            }
+        }
+
+        @include media($size, max) {
+            ._#{$mod}show {
+                display: none !important;
+            }
+        }
+    }
+    /* stylelint-enable */
 }

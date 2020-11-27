@@ -1,57 +1,57 @@
 // Typography
 #{headings()} {
-  line-height: 1.28;
-  font-weight: 700;
-  color: $headings-color;
+    line-height: 1.28;
+    font-weight: 700;
+    color: $headings-color;
 }
 
 h1,
 .heading-1 {
-  @include fluid-typography(32px, 54px);
-  line-height: (62 / 54);
+    @include fluid-typography(32px, 54px);
+    line-height: (62 / 54);
 }
 
 h2,
 .heading-2 {
-  @include fluid-typography(28px, 40px);
-  line-height: (57 / 40);
+    @include fluid-typography(28px, 40px);
+    line-height: (57 / 40);
 }
 
 h3,
 .heading-3 {
-  @include fluid-typography(24px, 36px);
-  line-height: (46 / 36);
+    @include fluid-typography(24px, 36px);
+    line-height: (46 / 36);
 }
 
 h4,
 .heading-4 {
-  @include fluid-typography(22px, 28px);
-  line-height: (36 / 28);
+    @include fluid-typography(22px, 28px);
+    line-height: (36 / 28);
 }
 
 h5,
 .heading-5 {
-  @include fluid-typography(18px, 24px);
-  line-height: (34 / 24);
+    @include fluid-typography(18px, 24px);
+    line-height: (34 / 24);
 }
 
 h6,
 .heading-6 {
-  font-size: rem(16);
-  line-height: (34 / 24);
+    font-size: rem(16);
+    line-height: (34 / 24);
 }
 
 a {
-  text-decoration: none;
-  transition: .3s ease-out color;
+    text-decoration: none;
+    transition: .3s ease-out color;
 
-  &,
-  &:focus,
-  &:active {
-    color: $primary;
-  }
+    &,
+    &:focus,
+    &:active {
+        color: $primary;
+    }
 
-  &:hover {
-    color: $secondary;
-  }
+    &:hover {
+        color: $secondary;
+    }
 }

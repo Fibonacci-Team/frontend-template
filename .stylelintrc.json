@@ -11,7 +11,7 @@
   ],
   "rules": {
     "indentation": [
-      2, {
+      4, {
         "ignore": ["inside-parens"]
       }
     ],

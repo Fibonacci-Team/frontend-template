@@ -1,25 +1,25 @@
 extends ../layouts/default
 
 block variables
-  - title = 'Frontend template';
+    - title = 'Frontend template';
 
 block content
-  .container
-    .grid._lg-items-end.grid--vspace-15.grid--hspace-15
-      .cell.cell--lg-6
-        h1 Frontend template
-        h2 Frontend template
-        h3 Frontend template
-        h4 Frontend template
-        h5 Frontend template
-        h6 Frontend template
-        a(href='#') Default Link
+    .container
+        .grid._lg-items-end.grid--vspace-15.grid--hspace-15
+            .cell.cell--lg-6
+                h1 Frontend template
+                h2 Frontend template
+                h3 Frontend template
+                h4 Frontend template
+                h5 Frontend template
+                h6 Frontend template
+                a(href='#') Default Link
 
-        img.lazy(src='assets/img/_blank.png' alt='' data-src='assets/img/car.jpg')
+                img.lazy(src='assets/img/_blank.png' alt='' data-src='assets/img/car.jpg')
 
-      .cell.cell--lg-6
-        #app
-          button(@click='counter++; component = !component' type='button') click me
-          p counter {{ counter }}
-            +svg('to-top', 20)
-          example-component(v-if='component')
+            .cell.cell--lg-6
+                #app
+                    button(@click='counter++; component = !component' type='button') click me
+                    p counter {{ counter }}
+                        +svg('to-top', 20)
+                    example-component(v-if='component')

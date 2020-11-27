@@ -1,16 +1,16 @@
 html {
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-  font-family: $font-family-main;
-  color: $body-color;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: $font-family-main;
+    color: $body-color;
 }
 
 body {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 ::selection {
-  color: $white;
-  background: $primary;
+    color: $white;
+    background: $primary;
 }

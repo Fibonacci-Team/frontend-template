@@ -1,14 +1,14 @@
 // Flex grid cell sizing
 // @param {Size} $width - percentage
 @mixin flex-cell-width($width) {
-  flex-basis: $width;
-  width: $width;
+    flex-basis: $width;
+    width: $width;
 
-  @if ($width == auto) {
-    max-width: none;
-  }
+    @if ($width == auto) {
+        max-width: none;
+    }
 
-  @else {
-    max-width: $width;
-  }
+    @else {
+        max-width: $width;
+    }
 }

@@ -2,11 +2,11 @@
 // @return {number}
 
 @function strip-units ($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
 
-  @return $number;
+    @return $number;
 }
 
 // @param {number} $value
@@ -14,20 +14,20 @@
 // @param {number} $unit [1em]
 // @return {number}
 @function em ($value, $base: 16px, $unit: 1em) {
-  @if not unitless($value) {
-    $value: strip-units($value);
-  }
+    @if not unitless($value) {
+        $value: strip-units($value);
+    }
 
-  @if not unitless($base) {
-    $base: strip-units($base);
-  }
+    @if not unitless($base) {
+        $base: strip-units($base);
+    }
 
-  @return ($value / $base) * $unit;
+    @return ($value / $base) * $unit;
 }
 
 // @param {number} $value
 // @param {number} $base [16px]
 // @return {number}
 @function rem ($value, $base: 16px) {
-  @return em($value, $base, 1rem);
+    @return em($value, $base, 1rem);
 }

@@ -3,5 +3,5 @@
 // @param {number} $fontsize - размер шрифта
 // @return {number}
 @function lspace ($space, $fontsize) {
-  @return ($space / 1000) * rem($fontsize);
+    @return ($space / 1000) * rem($fontsize);
 }

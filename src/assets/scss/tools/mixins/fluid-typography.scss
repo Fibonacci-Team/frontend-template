@@ -1,11 +1,11 @@
 @mixin fluid-typography($start, $end, $media-start: $fluid-typography-start, $media-stop: $fluid-typography-end) {
-  font-size: rem($start);
+    font-size: rem($start);
 
-  @media (min-width: $media-start) {
-    font-size: calc(#{$start} + #{strip-unit($end) - strip-unit($start)} * ( (100vw - #{$media-start}) / #{strip-unit($media-stop) - strip-unit($media-start)} ));
-  }
+    @media (min-width: $media-start) {
+        font-size: calc(#{$start} + #{strip-unit($end) - strip-unit($start)} * ( (100vw - #{$media-start}) / #{strip-unit($media-stop) - strip-unit($media-start)} ));
+    }
 
-  @include media($media-stop) {
-    font-size: rem($end);
-  }
+    @include media($media-stop) {
+        font-size: rem($end);
+    }
 }

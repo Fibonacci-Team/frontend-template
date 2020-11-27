@@ -1,21 +1,21 @@
 // @param {String} $mod [""] - breakpoint's name with separator
 // @access private
 @mixin _helpers-float-generate($mod: '') {
-  ._#{$mod}clearfix {
-    @include clearfix();
-  }
+    ._#{$mod}clearfix {
+        @include clearfix();
+    }
 
-  ._#{$mod}clear {
-    clear: both;
-  }
+    ._#{$mod}clear {
+        clear: both;
+    }
 
-  ._#{$mod}fll {
-    float: left;
-  }
+    ._#{$mod}fll {
+        float: left;
+    }
 
-  ._#{$mod}flr {
-    float: right;
-  }
+    ._#{$mod}flr {
+        float: right;
+    }
 }
 
 // Float helpers
@@ -23,11 +23,11 @@
 // @requires {mixin} clearfix
 // @param {Map} $points [()] - map of breakpoints to make helpers to
 @mixin helpers-float ($points: ()) {
-  @include _helpers-float-generate();
+    @include _helpers-float-generate();
 
-  @each $point, $size in $points {
-    @include media($size) {
-      @include _helpers-float-generate($point + $sep);
+    @each $point, $size in $points {
+        @include media($size) {
+            @include _helpers-float-generate($point + $sep);
+        }
     }
-  }
 }

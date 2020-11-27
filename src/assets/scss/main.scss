@@ -5,20 +5,16 @@
 @import 'tools/index';
 
 // Generic
-@import 'vendors/reset';
+@import 'generic/reset';
 @import 'generic/layout';
 @import 'generic/layout-inner';
 @import 'generic/container';
 @import 'generic/typography';
 
-// Elements
-@import 'elements/logo';
-
-// Components
-@import 'components/post';
-
 // Content
-@import 'content/sections';
+@import 'components/logo';
+@import 'components/post';
+@import 'components/sections';
 
 // Modules
 @import 'modules/index';

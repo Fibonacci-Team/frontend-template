@@ -1,45 +1,45 @@
 // @param {Number} $size - block percentage size
 // @param {Bool} $set-absolute - add positioning
 @mixin absolute-cube($size, $set-absolute: true) {
-  @if ($set-absolute) {
-    position: absolute;
-  }
+    @if ($set-absolute) {
+        position: absolute;
+    }
 
-  top: (100% - $size) / 2;
-  left: (100% - $size) / 2;
-  width: $size;
-  height: $size;
+    top: (100% - $size) / 2;
+    left: (100% - $size) / 2;
+    width: $size;
+    height: $size;
 }
 
 // @param {Number} $size - block percentage size
 // @param {Bool} $set-absolute - add positioning
 @mixin absolute-gap($size, $set-absolute: true) {
-  @if ($set-absolute) {
-    position: absolute;
-  }
+    @if ($set-absolute) {
+        position: absolute;
+    }
 
-  top: $size;
-  right: $size;
-  left: $size;
-  bottom: $size;
+    top: $size;
+    right: $size;
+    left: $size;
+    bottom: $size;
 }
 
 // @param {Number} $size - block size
 // @param {Bool} $max-height - set max-height
 // @param {Bool} $max-width - set max-width
 @mixin absolute-centering($max-height: true, $max-width: false) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 
-  @if ($max-height) {
-    max-height: 100%;
-  }
+    @if ($max-height) {
+        max-height: 100%;
+    }
 
-  @if ($max-width) {
-    max-width: 100%;
-  }
+    @if ($max-width) {
+        max-width: 100%;
+    }
 }

@@ -1,14 +1,14 @@
 %context-dark {
-  &,
-  #{headings()} {
-    color: $white;
-  }
+    &,
+    #{headings()} {
+        color: $white;
+    }
 }
 
 %context-light {
-  color: $body-color;
+    color: $body-color;
 
-  #{headings()} {
-    color: $headings-color;
-  }
+    #{headings()} {
+        color: $headings-color;
+    }
 }
